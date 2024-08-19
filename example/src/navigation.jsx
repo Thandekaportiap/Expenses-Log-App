@@ -6,10 +6,10 @@ const nav = () => {
         <>
 
 <nav>
-            <ul style={{display:"flex",  listStyle:"none"}}>
+            <ul style={{display:"flex",  listStyle:"none", marginTop:"0"}}>
                 
                 <li style={{padding:"1% 5%"}}><Link to="/">Home</Link> </li> 
-                <li style={{padding:"1% 5%"}}><Link to="/about">LogIn</Link> </li> 
+                <li style={{padding:"1% 5%"}}><Link to="/login">LogIn</Link> </li> 
                 <li style={{padding:"1% 5%"}}><Link to="/add">Add Transaction</Link></li>
                 
             </ul>

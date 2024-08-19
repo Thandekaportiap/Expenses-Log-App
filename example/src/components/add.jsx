@@ -1,4 +1,5 @@
 import { useState } from "react"
+import DisplayTransaction from "./display";
 
 const add = (props) => {
 
@@ -12,6 +13,9 @@ props.add(transactionItem, amount, transactionType )
 
     return(
         <>
+        <div>
+        <DisplayTransaction transactions={props.transactions}/>
+        </div>
       
         
       <h1>Add a new transation</h1>

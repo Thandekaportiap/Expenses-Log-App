@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home"
 import Login from './login';
 import Add from './components/add';
-import DisplayTransaction from './components/display';
+import NoPage from './components/NoPage'
 
 const App = () => {
   
@@ -24,13 +24,14 @@ const App = () => {
    <div className='container'>
    <Nav/>
    
-   <DisplayTransaction transactions={transactions}/>
+   
    
    <Routes>
    <Route path="/home" element={< Home />}></Route>
    <Route index element={< Home />} />
    <Route path='login' element={<Login/>}/>
-   <Route path='add' element={<Add add={add}/>}/>
+   <Route path='add' element={<Add add={add} transactions={transactions}/>}/>
+   <Route path='*' element={<NoPage/>}/>
    </Routes>
    </div>
    </BrowserRouter>
