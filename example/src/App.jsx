@@ -6,18 +6,29 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./home"
 import About from './about';
 import Add from './components/add';
+import DisplayTransaction from './components/display';
 
 const App = () => {
   
+  const [transactions, setTransactions] = useState([]);
+  
+  const add = ((transactionItem, amount, transactionType)=>{
+    setTransactions((transactions)=>[...transactions, {transactionItem:transactionItem,amount:amount,transactionType:transactionType}]);
+   console.log(transactions)
+  })
+
   return (
    <>
+   <DisplayTransaction transactions={transactions}/>
    <BrowserRouter>
+   <div className='container'>
    <Routes>
    <Route path="/home" element={< Home />}></Route>
    <Route index element={< Home />} />
    <Route path='about' element={<About/>}/>
-   <Route path='add' element={<Add/>}/>
+   <Route path='add' element={<Add add={add}/>}/>
    </Routes>
+   </div>
    </BrowserRouter>
    </>
   );
