@@ -19,9 +19,10 @@ const App = () => {
 
   return (
    <>
-   <DisplayTransaction transactions={transactions}/>
+  
    <BrowserRouter>
    <div className='container'>
+   <DisplayTransaction transactions={transactions}/>
    <Routes>
    <Route path="/home" element={< Home />}></Route>
    <Route index element={< Home />} />

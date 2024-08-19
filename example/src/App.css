@@ -39,3 +39,31 @@ button {
   margin-left: 45px;
   margin-top: 4px;
 }
+
+.list-items {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  width: 500px;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.list-items h6{
+  padding-top: 25px;
+  padding-left: 12px;
+}
+
+.expenseIndicator {
+  display: block;
+  border-right: 4px solid red;
+  width: 100px;
+  height: 47px;
+}
+
+.incomeIndicator{
+  display: block;
+  border-right: 4px solid green;
+  width: 100px;
+  height: 47px;
+}

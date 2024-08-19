@@ -15,11 +15,11 @@ props.add(transactionItem, amount, transactionType )
       
         
       <h1>Add a new transation</h1>
-       <input type="text" placeholder="Enter amount" onChange={(event)=> setTransactionItem(event.target.value)}/> <br/>
+       <input type="text" placeholder="Enter Expense" onChange={(event)=> setTransactionItem(event.target.value)}/> <br/>
        <input type="text" placeholder="Enter amount" onChange={(event)=> setAmount(event.target.value)}/> <br/>
        <select onChange={(event)=> setTransactionType(event.target.value)}>
-        <option value="">Income</option>
-        <option value="">Expense</option>
+        <option >Income</option>
+        <option >Expense</option>
        </select>
        <br/>
 
