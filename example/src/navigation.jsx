@@ -10,7 +10,7 @@ const nav = () => {
                 
                 <li style={{padding:"1% 5%"}}><Link to="/">Home</Link> </li> 
                 <li style={{padding:"1% 5%"}}><Link to="/login">LogIn</Link> </li> 
-                <li style={{padding:"1% 5%"}}><Link to="/add">Add Transaction</Link></li>
+                <li style={{padding:"1% 3%"}}><Link to="/add">Add Transaction</Link></li>
                 
             </ul>
         </nav>
