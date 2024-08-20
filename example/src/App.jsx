@@ -7,6 +7,7 @@ import Home from "./home"
 import Login from './login';
 import Add from './components/add';
 import NoPage from './components/NoPage'
+import Singup from './components/singup';
 
 const App = () => {
   const [cartIsEmpty] = useState(false)
@@ -32,6 +33,7 @@ const App = () => {
    <Route index element={< Home />} />
    <Route path='login' element={<Login/>}/>
    <Route path='add' element={<Add add={add} transactions={transactions}/>}/>
+   <Route path='signup' element={<Singup/>}/>
    <Route path='*' element={<NoPage/>}/>
   <Route path="/redirect" element={<Navigate to="add"/>}/> 
   <Route path='register' element={cartIsEmpty ? <Navigate to="/home"/> : <p>Hello</p>}/>

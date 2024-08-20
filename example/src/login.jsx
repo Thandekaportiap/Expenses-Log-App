@@ -11,7 +11,7 @@ const login = () => {
         <>
         <h1>my login page</h1>
         <button onClick={goToHomePage}>Go to home page</button>
-        <Link></Link>
+        <Link to={"/signup"}>Dont Have Account? SignUp</Link>
         </>
 
     )
